@@ -5,6 +5,7 @@ import "./App.css";
 
 import Nav from "./components/Nav/Nav";
 import ImageOfTheDay from "./components/ImageOfTheDay/ImageOfTheDay";
+import Loader from "./components/Loader/Loader";
 
 function App() {
 	const [data, setData] = useState();
@@ -22,7 +23,7 @@ function App() {
 
 	console.log(data);
 
-	if (!data) return <h1>Loading...</h1>;
+	if (!data) return <Loader />;
 
 	return (
 		<div className="App">

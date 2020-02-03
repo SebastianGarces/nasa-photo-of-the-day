@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:700,800,900|Open+Sans:400,600&display=swap");
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -5,8 +7,9 @@
 }
 
 body {
-	background-color: #181a1f;
+	background-color: #12151b;
 	color: white;
+	font-family: "Muli", sans-serif;
 }
 
 .App {
