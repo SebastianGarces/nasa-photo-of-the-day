@@ -5,6 +5,7 @@ import "./App.css";
 
 import Nav from "./components/Nav/Nav";
 import ImageOfTheDay from "./components/ImageOfTheDay/ImageOfTheDay";
+import VideoOfTheDay from "./components/VideoOfTheDay/VideoOfTheDay";
 import Loader from "./components/Loader/Loader";
 
 function App() {
@@ -28,7 +29,11 @@ function App() {
 	return (
 		<div className="App">
 			<Nav data={data} />
-			<ImageOfTheDay data={data} />
+			{data.media_type === "video" ? (
+				<VideoOfTheDay data={data} />
+			) : (
+				<ImageOfTheDay data={data} />
+			)}
 		</div>
 	);
 }
